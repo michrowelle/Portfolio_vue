@@ -1,0 +1,234 @@
+:root {
+    --logo-font-family: "ABC Estragon Variable Edu";
+    --logo-font-size: 28px;
+    --nav-text-font-family: "Suisse Int'l";
+    --nav-text-font-size: 24px;
+    --copy-text-font-family: "Suisse Int'l";
+    --copy-text-font-size: 20px;
+    --info-text-font-family: "Suisse Int'l";
+    --info-text-font-size: 16px;
+    --footer-text-font-family: "Suisse Int'l Mono";
+    --footer-text-font-size: 10px;
+    --footer-text-weight: 100;
+    --color1: #000;
+    --color2: #ff0000;
+    --color3: #fff;
+}
+
+body {
+    background-color: var(--color3);
+    display: flex;
+    cursor: none;
+    
+}
+
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color3);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999; 
+    mix-blend-mode: difference; 
+}
+
+header {
+    color: var(--color3);
+    mix-blend-mode: difference;
+    z-index: 999;
+}
+
+
+.nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 2rem;
+    left: 2rem;
+    text-align: left;
+}
+
+.logo {
+    font-family: var(--logo-font-family);
+    font-size: var(--logo-font-size);
+    font-weight: 400;
+    
+}
+
+ul {
+    font-family: var(--nav-text-font-family);
+    font-size: var(--nav-text-font-size);
+    text-align: right;
+    list-style: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    margin: 0;
+} 
+
+a {
+    color: var(--color3);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color2);
+    cursor: none;
+}
+
+.about {
+    margin: 8rem 1.5rem 2rem 1.5rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px 50px;
+}
+
+.profilepic img{
+    grid-column: 1 / 2;
+    width: 36%; 
+    height: auto; 
+    position: fixed;
+    bottom: 10rem
+}
+
+.my-infos {
+    grid-column: 2 / 3;
+    position: relative;
+    bottom: 0rem;
+    top: 30rem
+
+}
+
+.me-text, .video-cv, .contact{
+    font-family: var(--copy-text-font-family);
+    font-size: var(--copy-text-font-size);
+    margin: 20px 0 20px 0;
+    color: var(--color1);
+    width: 90%
+}
+
+.video-cv, .contact {
+    margin: 20px 20px 20px 0
+}
+
+.event-row {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px;
+    margin: 20px 0 20px 0;
+}
+
+.time {
+    font-family: var(--info-text-font-family);
+    font-size: 32px;
+    font-weight: 600;
+    width: 20rem;
+    color: var(--color1);
+    
+}
+
+.job {
+    font-family: var(--info-text-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color1);
+    position: relative;
+    left: 6rem;
+    top: 0.3rem
+    
+}
+
+footer {
+    font-family: var(--footer-text-font-family);
+    font-size: var(--footer-text-font-size);
+    font-weight: var(--footer-text-weight);
+    color: var(--color3);
+    position: fixed;
+    bottom: 0.1rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: difference;
+}
+
+footer a {
+    color: var(--color3);
+}
+
+footer .tab {
+    margin: 20px;
+}
+
+@media (max-width: 1200px) {
+    .job {
+        left: 1rem;
+    }
+    
+}
+@media (max-width: 900px) {
+    :root {
+        --logo-font-size: 24px;
+        --nav-text-font-size: 20px;
+        --copy-text-font-size: 16px;
+        --info-text-font-size: 12px;
+        --footer-text-font-size: 10px;
+    }
+
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0rem;
+        
+    }
+
+    .profilepic img {
+        position: absolute;
+        width: 70%;
+        top: 8rem;
+        grid-column: 1 / 1;
+    }
+
+    .my-infos img {
+        width: 1rem;
+        height: auto;
+    }
+
+    .my-infos {
+        position: relative;
+        top: 71vw;
+
+        
+    }
+}
+
+@media (max-width: 600px) {
+    .event-row {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 10px;
+        margin: 20px 0 20px 0;
+    }
+
+    .time {
+        font-family: var(--info-text-font-family);
+        font-size: var(--copy-text-font-size);
+        font-weight: 600;
+        width: 10rem;
+        color: var(--color1);
+        
+    }
+    
+    .job {
+        font-family: var(--info-text-font-family);
+        font-size: var(--info-text-font-size);
+        font-weight: 400;
+        color: var(--color1);
+        position: relative;
+        left: 0rem;
+        top: 0.1rem
+        
+    }
+}

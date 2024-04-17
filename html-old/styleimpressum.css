@@ -1,0 +1,142 @@
+:root {
+    --logo-font-family: "ABC Estragon Variable Edu";
+    --logo-font-size: 28px;
+    --nav-text-font-family: "Suisse Int'l";
+    --nav-text-font-size: 24px;
+    --copy-text-font-family: "Suisse Int'l";
+    --copy-text-font-size: 20px;
+    --info-text-font-family: "Suisse Int'l";
+    --info-text-font-size: 16px;
+    --footer-text-font-family: "Suisse Int'l Mono";
+    --footer-text-font-size: 10px;
+    --footer-text-weight: 100;
+    --color1: #000;
+    --color2: #ff0000;
+    --color3: #fff;
+}
+
+body {
+    background-color: #f6f6f6;
+    display: flex;
+    cursor: none;
+    
+}
+
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color3);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999; 
+    mix-blend-mode: difference; 
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 2rem;
+    left: 2rem;
+    text-align: left;
+    
+}
+
+.logo {
+    font-family: var(--logo-font-family);
+    font-size: var(--logo-font-size);
+    font-weight: 400;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+ul {
+    font-family: var(--nav-text-font-family);
+    font-size: var(--nav-text-font-size);
+    text-align: right;
+    list-style: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    margin: 0;
+}
+
+a {
+    color: var(--color1); 
+    text-decoration: none;
+    mix-blend-mode: difference;
+}
+
+a:hover {
+    color: var(--color2);
+    cursor: none;
+}
+
+.impressum {
+    margin: 8rem 1.5rem 2rem 1.5rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 0.6vw 50px;
+}
+
+.title {
+    font-family: var(--copy-text-font-family);
+    font-size: var(--info-text-font-size);
+    font-weight: 600;
+    text-align: right;
+    
+}
+
+.text {
+    font-family: var(--copy-text-font-family);
+    font-size: var(--info-text-font-size);
+    color: var(--color1);
+    strong {
+        font-weight: 600;
+    }
+}
+
+footer {
+    font-family: var(--footer-text-font-family);
+    font-size: var(--footer-text-font-size);
+    font-weight: var(--footer-text-weight);
+    color: var(--color3);
+    position: fixed;
+    bottom: 0.1rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mix-blend-mode: difference;
+}
+
+footer a {
+    color: var(--color3);
+}
+
+footer .tab {
+    margin: 20px;
+}
+
+@media (max-width: 840px) {
+    :root {
+        --logo-font-size: 24px;
+        --nav-text-font-size: 20px;
+        --copy-text-font-size: 16px;
+        --info-text-font-size: 12px;
+        --footer-text-font-size: 10px;
+    }
+
+    .impressum {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .title {
+        font-size: var(--nav-font-size);
+        text-align: left;
+        margin-bottom: 20px
+    } 
+}
