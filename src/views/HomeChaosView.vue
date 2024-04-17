@@ -115,7 +115,7 @@
         color: var(--color1);
         position: relative;
         top: 4.4rem;
-        left: 1.5rem
+        left: 0.8rem
     }
   
     .filter:hover {
@@ -335,14 +335,14 @@
             display: flex;
             position: fixed;
             justify-content: left;
-            top: 3.6rem;
+            top: 3.8rem;
             left: 2rem;
             right: 0;  
         }
 
         .filter {
         top: 5.5rem;
-        left: 1.5rem
+        left: 0.8rem
         }
   }
   
