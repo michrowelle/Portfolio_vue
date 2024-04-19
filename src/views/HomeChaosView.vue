@@ -335,8 +335,8 @@
             display: flex;
             position: fixed;
             justify-content: left;
-            top: 3.8rem;
-            left: 2rem;
+            top: 4rem;
+            left: 1rem;
             right: 0;  
         }
 

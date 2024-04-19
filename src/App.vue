@@ -54,7 +54,8 @@
       background-color: #fff;
       display: flex;
       cursor: none; 
-      padding: 5px
+      padding: 5px;
+      margin: 0;
   }
 
   .custom-cursor {
@@ -95,7 +96,7 @@
       text-align: right;
       list-style: none;
       position: fixed;
-      top: 2rem;
+      top: 2.1rem;
       right: 2rem;
       margin: 0;
       padding: 0
@@ -145,21 +146,26 @@
   }
 
   @media (max-width: 600px) {
-      .row {
+
+    body{
+        padding: 0
+    }
+
+    .logo, .nav-items {
+        left: 1rem;
+    }
+
+    ul {
+        right: 1rem;
+    }
+
+    .row {
           display: grid;
           grid-template-columns: 1fr;
           min-height: 400vw;
       }
 
-      .state {
-          text-align: left;
-          display: flex;
-          position: fixed;
-          justify-content: left;
-          top: 3.6rem;
-          left: 2rem;
-          right: 0;
-      }
+    
   }
 
 </style>

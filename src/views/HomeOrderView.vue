@@ -212,11 +212,14 @@
             display: flex;
             position: fixed;
             justify-content: left;
-            top: 3.6rem;
-            left: 2rem;
+            top: 4rem;
+            left: 1rem;
             right: 0;
-            
         }
+
+        .projects {
+        margin: 6rem 0.5rem 2rem 0.5rem;
+    }
     }
 
 </style>
